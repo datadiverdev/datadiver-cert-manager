@@ -172,7 +172,7 @@ podLabels: {}
 #     - "8.8.8.8"
 
 nodeSelector:
-  kubernetes.io/os: linux
+  general.processing: "true"
 
 ingressShim: {}
   # defaultIssuerName: ""
@@ -318,7 +318,7 @@ webhook:
     timeoutSeconds: 1
 
   nodeSelector:
-    kubernetes.io/os: linux
+    general.processing: "true"
 
   affinity: {}
 
@@ -459,7 +459,7 @@ cainjector:
     #   memory: 32Mi
 
   nodeSelector:
-    kubernetes.io/os: linux
+    general.processing: "true"
 
   affinity: {}
 
@@ -567,7 +567,7 @@ startupapicheck:
     #   memory: 32Mi
 
   nodeSelector:
-    kubernetes.io/os: linux
+    general.processing: "true"
 
   affinity: {}
 
